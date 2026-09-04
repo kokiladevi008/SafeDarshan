@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E4C77E" />
+      <stop offset="50%" stop-color="#C9A24B" />
+      <stop offset="100%" stop-color="#8C6D1F" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C9A24B" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#0D0B14" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Glowing background disc -->
+  <circle cx="50" cy="50" r="46" fill="url(#glow)"/>
+  
+  <!-- Outer Ornate Shield Border -->
+  <circle cx="50" cy="50" r="44" fill="#171320" stroke="url(#goldGrad)" stroke-width="2.5"/>
+  <circle cx="50" cy="50" r="40" fill="none" stroke="url(#goldGrad)" stroke-width="0.8" stroke-dasharray="2,2"/>
+
+  <!-- Kalasam / Temple Top Finial -->
+  <path d="M50 14 L53 22 L47 22 Z" fill="url(#goldGrad)"/>
+  <circle cx="50" cy="13" r="2.5" fill="url(#goldGrad)"/>
+
+  <!-- Gopuram Tower Layers -->
+  <!-- Level 1 (Top Tier) -->
+  <path d="M43 23 H57 L55 31 H45 Z" fill="url(#goldGrad)"/>
+  <!-- Level 2 (Middle Tier) -->
+  <path d="M39 32 H61 L59 42 H41 Z" fill="url(#goldGrad)"/>
+  <!-- Level 3 (Lower Tier) -->
+  <path d="M35 43 H65 L63 55 H37 Z" fill="url(#goldGrad)"/>
+  <!-- Level 4 (Base Tier) -->
+  <path d="M30 56 H70 L68 70 H32 Z" fill="url(#goldGrad)"/>
+
+  <!-- Sanctum Archway Gate -->
+  <path d="M42 70 V58 C42 54 58 54 58 58 V70 Z" fill="#0D0B14" stroke="url(#goldGrad)" stroke-width="1.5"/>
+
+  <!-- Pillars Details -->
+  <line x1="36" y1="56" x2="36" y2="70" stroke="#171320" stroke-width="1"/>
+  <line x1="64" y1="56" x2="64" y2="70" stroke="#171320" stroke-width="1"/>
+
+  <!-- Base Foundation Stone -->
+  <rect x="25" y="70" width="50" height="5" rx="1.5" fill="url(#goldGrad)"/>
+  <rect x="22" y="75" width="56" height="4" rx="1.5" fill="url(#goldGrad)"/>
+
+  <!-- Decorative Sparkle Stars -->
+  <path d="M50 48 L51 51 L54 52 L51 53 L50 56 L49 53 L46 52 L49 51 Z" fill="#FAF6ED"/>
+</svg>

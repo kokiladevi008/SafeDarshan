@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-primary: #0D0B14;
+  --color-bg-surface: #171320;
+  --color-bg-cream: #FAF6ED;
+  --color-bg-cream-alt: #F1E9D8;
+  --color-gold: #C9A24B;
+  --color-gold-light: #E4C77E;
+  --color-gold-dark: #8C6D1F;
+  --color-maroon: #6B1E23;
+  --color-text-primary: #F5F0E6;
+  --color-text-dark: #231F2C;
+  --color-text-muted: #A79C87;
+  --color-success: #3F7D4F;
+  --color-warning: #C9822A;
+  --color-danger: #B23A32;
+  --font-serif: "Playfair Display", "Cormorant Garamond", Georgia, serif;
+  --font-sans: Inter, system-ui, sans-serif;
+}
+
+body {
+  background-color: #0D0B14;
+  color: #F5F0E6;
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, .font-serif-title {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0D0B14;
+}
+::-webkit-scrollbar-thumb {
+  background: #C9A24B;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E4C77E;
+}
+
+/* Glassmorphic card utility */
+.glass-card {
+  background: rgba(23, 19, 32, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(201, 162, 75, 0.2);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #E4C77E 0%, #C9A24B 50%, #8C6D1F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
